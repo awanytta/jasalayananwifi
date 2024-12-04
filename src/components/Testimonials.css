@@ -1,0 +1,71 @@
+/* src/components/Testimonials.css */
+
+.testimonials-container {
+  background: linear-gradient(to right, #6a11cb, #3498db); /* Gradien ungu ke biru */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff; /* Mengubah teks menjadi putih agar kontras dengan latar belakang */
+  margin-bottom: 40px;
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.testimonial-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #6a11cb;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  color: #555;
+}
+
+.testimonial-feedback {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #6a11cb;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .testimonials-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-item {
+    max-width: 90%;
+  }
+}

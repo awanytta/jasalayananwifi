@@ -1,0 +1,63 @@
+/* src/components/Auth.css */
+
+.auth-container {
+    background: linear-gradient(135deg, #1e90ff, #ff7f50); /* Gradasi warna latar belakang */
+    color: white;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .auth-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .auth-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .auth-form button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-form button:hover {
+    background-color: #1e90ff;
+  }
+  
+  .auth-form .switch-link {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .auth-form .switch-link a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  

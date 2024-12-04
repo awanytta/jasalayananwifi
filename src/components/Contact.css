@@ -1,0 +1,40 @@
+/* src/components/Contact.css */
+
+.contact-container {
+  background: linear-gradient(135deg, #6a11cb, #3498db); /* Gradasi ungu ke biru */
+  color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparan sedikit dengan latar belakang lebih gelap */
+  padding: 30px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #ff7f50; /* Tombol dengan warna oranye */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1e90ff; /* Warna tombol saat hover */
+}

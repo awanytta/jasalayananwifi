@@ -1,0 +1,88 @@
+/* src/components/FAQ.css */
+
+/* Container FAQ tanpa kolom, menggunakan full-width */
+.faq-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient Biru dan Ungu */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #fff; /* Teks berwarna putih untuk kontras */
+}
+
+/* Styling untuk judul FAQ */
+.faq-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff; /* Teks putih untuk judul */
+}
+
+/* Styling untuk deskripsi FAQ */
+.faq-description {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #e0e0e0; /* Teks lebih terang untuk deskripsi */
+}
+
+/* Styling untuk daftar FAQ tanpa kolom */
+.faq-list {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Styling untuk item FAQ */
+.faq-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Warna putih semi-transparan untuk item FAQ */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px; /* Memberikan jarak antar item FAQ */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: block; /* Pastikan elemen tampil secara vertikal */
+}
+
+/* Efek hover untuk item FAQ */
+.faq-item:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.15); /* Efek sedikit saat dihover */
+}
+
+/* Styling untuk pertanyaan FAQ */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff; /* Teks putih untuk pertanyaan */
+}
+
+/* Styling untuk jawaban FAQ */
+.faq-answer {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #dcdcdc; /* Teks lebih terang untuk jawaban */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2); /* Background putih ringan untuk jawaban */
+  border-radius: 6px;
+}
+
+/* Styling untuk ikon (untuk efek putar) */
+.icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* Reset latar belakang global untuk body jika diperlukan */
+body {
+  background-color: #fff; /* Menjaga latar belakang luar tetap putih */
+  color: #333; /* Warna teks umum untuk seluruh halaman */
+}

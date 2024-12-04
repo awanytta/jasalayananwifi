@@ -1,0 +1,141 @@
+/* src/components/WifiPackages.css */
+
+/* General container styling with a purple and blue gradient background */
+.wifi-packages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to Blue Gradient */
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Ensures the background covers the full screen */
+  color: white;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Package Card Styling */
+.packages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.package-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s;
+  text-align: center;
+  color: #444;
+}
+
+.package-card:hover {
+  transform: scale(1.05);
+}
+
+.package-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #6a11cb; /* Matches the purple gradient color */
+}
+
+.package-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+.buy-button, .purchased-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: white;
+  border: none;
+}
+
+.buy-button {
+  background-color: #6a11cb;
+}
+
+.buy-button:hover {
+  background-color: #2575fc;
+}
+
+.purchased-button {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+/* Payment Modal Styling */
+.payment-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  color: #444;
+}
+
+.payment-modal h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.payment-modal p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.payment-form input,
+.payment-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.payment-form button {
+  background-color: #2575fc;
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: none;
+}
+
+.payment-form button:hover {
+  background-color: #6a11cb;
+}
+
+/* Purchase Summary Styling */
+.purchase-summary {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+  color: #333;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
